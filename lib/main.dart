@@ -19,7 +19,13 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
         body: Center(
-          child: Text("this is body area of scaffold widget"),
+          child: Container(
+            transform: Matrix4.rotationZ(0.1),
+            width: 100,
+            height: 100,
+            color: Colors.greenAccent,
+            child: Center(child: Text("Body of Scaffold")),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
