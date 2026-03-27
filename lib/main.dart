@@ -19,13 +19,22 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
         body: Center(
-          child: Container(
-            transform: Matrix4.rotationZ(0.1),
-            width: 100,
-            height: 100,
-            color: Colors.greenAccent,
-            child: Center(child: Text("Body of Scaffold")),
+          child: Card(
+            color: Colors.limeAccent,
+            child: Padding(
+              padding: EdgeInsets.all(20),
+              child: Text("Hello"),
+            ),
           ),
+          // child: Container(
+          //   width: 100,
+          //   height: 100,
+          //   color: Colors.greenAccent,
+          //   child: Padding(
+          //     padding: EdgeInsets.all(40),
+          //     child: Text("Hello!"),
+          //     ),
+          // ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
